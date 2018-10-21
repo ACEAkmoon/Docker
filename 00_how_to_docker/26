@@ -1,0 +1,13 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    26                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: akrushin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/13 22:40:15 by akrushin          #+#    #+#              #
+#    Updated: 2018/10/13 22:40:17 by akrushin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker service create --replicas 2 --name engineering-bay --network overmind -e OC_USERNAME=akrushin -e OC_PASSWD=akrushinpwd 42school/engineering-bay

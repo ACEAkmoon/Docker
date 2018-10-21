@@ -1,0 +1,13 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: akrushin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/13 22:39:24 by akrushin          #+#    #+#              #
+#    Updated: 2018/10/13 22:39:25 by akrushin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker pull phpmyadmin/phpmyadmin; docker run -d --name roach-warden --restart=always -p=8081:80 --link="spawning-pool:db" phpmyadmin/phpmyadmin

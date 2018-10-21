@@ -1,0 +1,14 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: akrushin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/13 22:39:02 by akrushin          #+#    #+#              #
+#    Updated: 2018/10/13 22:39:04 by akrushin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker pull mysql:5.5;
+docker run -d --name spawning-pool --restart=always -e MYSQL_ROOT_PASSWORD=Kerrigan -v hatchery:/var/lib/mysql -e "MYSQL_DATABASE=zerglings" mysql:5.5
